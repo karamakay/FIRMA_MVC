@@ -1,0 +1,80 @@
+﻿body {
+    background-color:#d15959;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:14px;
+    
+}
+
+
+#liste table{
+    background-color:#808080;
+    width:100%;
+
+}
+    #liste table tr:first-child{
+        background-color:#ff0000;
+        position:fixed;
+    }
+    #liste table tr {
+        height: 25px;
+        line-height: 25px;
+    }
+#liste table tr:nth-child(:even)
+{
+    background-color:black;
+}
+    #liste table tr:nth-child(:odd) {
+        background-color:#1e0909;
+    }
+    #liste table tr:hover {
+        background-color:deepskyblue;
+        line-height: 25px;
+        cursor:pointer;
+    }
+    a{
+        text-decoration:none;
+        color:#113280;
+    }
+#arama {
+    height: 30px;
+    line-height: 30px;
+    background-color: #87d326;
+}
+    #arama input {
+        transition-duration: 0.5s;
+        transition:width .5s ease-in-out,background .3s ease;
+    }
+    #arama input:focus {
+        padding:5px;
+     width:300px;
+        border-radius:0px;
+    }
+    #menu {
+    height: 30px;
+    line-height: 30px;
+    background-color: #c1be42;
+}
+#button{
+    background-color:cadetblue;
+    border:1px solid #c18484;
+    height:20px;
+
+    vertical-align:top;
+    padding:2px 10px 2px 10px;
+
+
+
+
+}
+    #button a {
+        color:black;
+    }
+    #banner{
+        background-color:blue;
+        text-align:center;
+        color:white;
+        font-size:30px;
+
+
+
+    }
