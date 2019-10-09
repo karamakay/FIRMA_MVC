@@ -16,7 +16,7 @@ namespace FIRMA_MVC.Areas.AREAS
         {
             context.MapRoute(
                 "AREAS_default",
-                "AREAS/{controller}/{action}/{id}",
+                "AREAS/Admin/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
             );
         }

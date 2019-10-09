@@ -6,12 +6,12 @@
   @*Model =List<KATEGORI>
     <h2>Index</h2>*@
     <div id="arama">
-        <form action="/Kategoriler/Search" method="post">
+        <form action="/AREAS/Admin/Views/Kategoriler/Search" method="post">
             <label>Ara</label>
             <input type="text" name="txtARA" placeholder="KATEGORİ ADI GİRİNİZ" value="@veri" />
             <input type="submit" class="button" value="Ara" />
            
-            <a   class="button" href="/Kategoriler/Create">Yeni</a>
+            <a class="button" href="/AREAS/Admin/Views/Kategoriler/Create">Yeni</a>
         
         </form>
 
@@ -28,9 +28,9 @@
         foreach (var kategori in Model)
         {
                             <tr>
-                                <th><a href="/Kategoriler/Sil/@kategori.KATEGORI_REFNO">Sil</a></th>
+                                <th><a href="/AREAS/Admin/Views/Kategoriler/Sil/@kategori.KATEGORI_REFNO">Sil</a></th>
                                 <th>@kategori.KATEGORI_REFNO</th>
-                                <th><a href="/Kategoriler/Create/@kategori.KATEGORI_REFNO">@kategori.KATEGORI_ADI</a></th>
+                                <th><a href="/AREAS/Admin/Views//Kategoriler/Create/@kategori.KATEGORI_REFNO">@kategori.KATEGORI_ADI</a></th>
                             </tr>
 
         }
